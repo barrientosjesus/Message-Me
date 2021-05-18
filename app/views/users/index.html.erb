@@ -1,1 +1,7 @@
 <h3> TEST ROUTE </h3>
+
+<% @users.each do |user| %>
+  <a class="item">
+    <%= link_to user.username %>
+  </a>
+<% end %>
